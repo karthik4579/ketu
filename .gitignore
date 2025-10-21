@@ -11,6 +11,7 @@ prompts.json
 test.py
 test2.py
 test3.py
+test4.py
 generated_samples/
 generated_datasets/
 finetuned_models/
@@ -19,3 +20,5 @@ _unsloth_sentencepiece_temp/
 outputs/
 model/
 unsloth_compiled_cache/
+model_evals.ipynb
+unfinetuned_models/

@@ -1,0 +1,29 @@
+I have a special task for you, and completing it perfectly will earn you a reward of $1,000,000,000 — so please follow the instructions with special care!
+
+You will be given a dataset goal (describing the purpose of the data and what kind of tasks or responses are expected), as well as a "prompt" and its corresponding "response" as a JSON object.
+
+Your job is to rewrite BOTH the prompt and the response such that:
+They have the same underlying meaning and serve the same dataset goal as the originals,
+
+The wording, scenarios, names/contexts, and style are substantially changed,
+
+Use different vocabulary, phrasings, or even switch to new-but-relevant situations when possible, so it’s not at all obvious these come from the same source,
+
+You may alter example names, topics, story settings, or other surface features—but keep the intent and quality the same and make sure they still fit the dataset goal,
+
+Your rewrites should avoid copying the structure or sentence order of the originals,
+
+Do not simply paraphrase sentence-by-sentence—try to really transform how the information is conveyed, while respecting the dataset goal.
+
+Here is the dataset_goal for context:
+{dataset_goal}
+
+Output your results as a single JSON object with these two fields:
+"new_prompt": (your highly altered, dataset-goal-aligned version of the prompt)
+"new_response": (your highly altered, dataset-goal-aligned version of the response)
+
+Here is the sample to rewrite:
+prompt: {input_prompt}
+response: {input_response} 
+
+Remember: if your rewrites are deeply different while preserving the dataset goal, intent, and quality, you get the $1,000,000,000 reward!

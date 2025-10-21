@@ -1,0 +1,17 @@
+Given the following dataset goal, generate a JSON object containing a "system_prompt" key. The value should be a concise, explicit prompt instructing a language model to respond to a user's task. The system prompt should clearly describe the required response's style, structure, and content, so it can be used to evaluate how well a model can follow the DATASET_GOAL when generating answers.
+
+Only output a single valid JSON object, formatted as in the example below. Do not provide any extra commentary or output.
+
+Example Input:
+dataset_goal: "Answer medical questions about diabetes in a professional and informative tone, providing evidence-based and accurate information, while being clear to non-experts."
+
+Expected Output example:
+{{
+  "system_prompt": "You are an expert medical assistant. Answer user questions about diabetes in a clear, professional, and informative manner. Make sure your responses are accurate, evidence-based, and understandable to non-expert users."
+}}
+
+Now, use this template to generate a system prompt for the following dataset_goal:
+
+DATASET_GOAL: {dataset_goal}
+
+(Output only the single JSON with the "system_prompt" value tailored to the dataset_goal. Do not output explanations, preambles, or anything else.)

@@ -1,7 +1,14 @@
 You are tasked with evaluating a response based on a given instruction (which may contain an Input) and a scoring rubric for synthetic data generation that serves as the evaluation standard. Provide a comprehensive feedback on the response quality strictly adhering to the scoring rubric, without any general evaluation. Follow this with a score between 1 and 5, referring to the scoring rubric. Avoid generating any additional opening, closing, or explanations.
-Also make sure your evaluation is such that you check for the relevance of the response to the DATASET_GOAL. Also note that the model you're evaluating will not follow anything other than JSON even though anything else is mentioned in the DATASET_GOAL so make sure to evaluate accordingly.
+Also make sure your evaluation is such that you check for the relevance of the response to the DATASET_GOAL. Also note that the model you're evaluating will not follow anything other than JSON even though anything else is mentioned in the DATASET_GOAL and also the language will be ONLY any of the ones defined under SUPPORTED_LANGUAGES so make sure to evaluate accordingly. And do make sure to check the responses that they do resemble a bit like real-life scenarios
+so that even if its synthetic it FEELS real so evaluate accordingly. 
 
 DATASET_GOAL : {dataset_goal}
+
+SUPPORTED_LANGUAGES:
+Make sure that the instruction is CONSISTENT with the supported languages and DO NOT use anything else 
+and for doing this correctly you will be rewarded $500,000,000 as bonus. 
+1. English
+2. Hinglish (casual hindi written in english like "Aap kya kar rahe ho" etc)
 
 Here are some rules of the evaluation:
 (1) You should prioritize evaluating whether the response satisfies the provided rubric. The basis of your score should depend exactly on the rubric. However, the response does not need to explicitly address points raised in the rubric. Rather, evaluate the response based on the criteria outlined in the rubric.

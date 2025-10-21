@@ -4,7 +4,9 @@ critique in it you have to use the critique to imrpove the response by closely f
 it is being addressed correctly so as to improve the scoring adhering to the gvien critique/feedback. And the critique given from 
 you comes from a specialized llm which will be judging your responses for relevance against the DATASET_GOAL and the given prompt 
 in the input. And also the llm judge will judge and give a score ranging from 1 to 5 based on the rubrics defined under SCORE_RUBRICS. 
-And OUTPUT_FORMAT should be STRICTLY FOLLOWED in your response and it SHOULD BE A VALID JSON.
+And OUTPUT_FORMAT should be STRICTLY FOLLOWED in your response and it SHOULD BE A VALID JSON. And on giving a correct and improved response
+in correct format you will receive $1,000,000,000 and an additional $500,000,000 as bonus for every improved response you give that 
+improves upon the critique given by the llm judge and is coherent and factually correct without any starting or ending phrases and is to the point.
 
 VARIABLES:
 DATASET_GOAL: {dataset_goal}
